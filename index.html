@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="index">
+    <meta name="googlebot" content="index">
+    <meta name="viewport" content="width=device-width, initial-scale=1,
+            shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>台灣好雇主</title>
+    <meta name="keywords" content="Cheers,工作,人才,管理,趨勢,共享,串流,支付,跨域,數位" />
+    <meta name="description" content="台灣好雇主" />
+    <!--icons-->
+    <link rel="shortcut icon" href="https://cdn.cheers.com.tw/cwlearning/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="57x57" href="https://cdn.cheers.com.tw/cwlearning/touch-icon-57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://cdn.cheers.com.tw/cwlearning/touch-icon-72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://cdn.cheers.com.tw/cwlearning/touch-icon-114.png">
+    <!--fb og-->
+    <meta property="og:title" content="台灣好雇主">
+    <meta property="og:type" content="website" />
+    <!-- <meta property="og:url"
+            content="https://web.cheers.com.tw/event/talent/index.html"
+            /> -->
+    <!-- <meta property="og:image"
+            content="https://web.cheers.com.tw/event/talent/assets/img/fb.png"
+            /> -->
+    <meta property="og:site_name" content="台灣好雇主" />
+    <meta property="og:locale" content="zh_TW" />
+    <meta property="og:description" content="台灣好雇主">
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+    <!-- Google Material Icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <!-- Start GA-->
+    <!-- End GA -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Global site tag end -->
+
+    <!-- Facebook Pixel Code -->
+    <!-- End Facebook Pixel Code -->
+
+    <!-- Google Tag Manager -->
+    <style>
+        :root {
+            --marquee-width: 54vw;
+            --marquee-height: 20vh;
+            /* --marquee-elements: 12; */
+            /* defined with JavaScript */
+            --marquee-elements-displayed: 5;
+            --marquee-element-width: calc(var(--marquee-width) / var(--marquee-elements-displayed));
+            --marquee-animation-duration: calc(var(--marquee-elements) * 3s);
+        }
+
+        .marquee {
+            /* width: var(--marquee-width); */
+            width: 100%;
+            height: var(--marquee-height);
+            /* background-color: #111; */
+            /* color: #eee; */
+            overflow: hidden;
+            position: relative;
+        }
+
+        .marquee img {
+            width: 100%;
+            height: auto;
+        }
+
+        .marquee li:nth-child(6) img {
+            width: 50px;
+            height: auto;
+        }
+
+
+
+        .marquee:before,
+        .marquee:after {
+            position: absolute;
+            top: 0;
+            width: 10rem;
+            height: 100%;
+            content: "";
+            z-index: 1;
+        }
+
+        /* .marquee:before {
+            left: 0;
+            background: linear-gradient(to right, #111 0%, transparent 100%);
+        }
+
+        .marquee:after {
+            right: 0;
+            background: linear-gradient(to left, #111 0%, transparent 100%);
+        } */
+
+        .marquee-content {
+            list-style: none;
+            height: 100%;
+            display: flex;
+            animation: scrolling var(--marquee-animation-duration) linear infinite;
+            transition-delay: 2s, 4ms;
+        }
+
+        /* .marquee-content:hover {
+  animation-play-state: paused;
+} */
+        @keyframes scrolling {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(calc(-1 * var(--marquee-element-width) * var(--marquee-elements)));
+            }
+        }
+
+        .marquee-content li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-shrink: 0;
+            /* width: var(--marquee-element-width); */
+            /* width: var(--marquee-element); */
+            max-height: 100%;
+            white-space: nowrap;
+            margin: 0 20px;
+        }
+
+        .marquee-content li img {
+            width: 100%;
+            height: auto;
+            max-height: 50px;
+            /* height: 100%; */
+            /* border: 2px solid #eee; */
+        }
+
+        @media (max-width: 600px) {
+            html {
+                font-size: 12px;
+            }
+
+            :root {
+                --marquee-width: 100vw;
+                --marquee-height: 16vh;
+                --marquee-elements-displayed: 3;
+            }
+
+            /* .marquee:before,
+            .marquee:after {
+                width: 5rem;
+            } */
+        }
+
+
+        .carousel-item-2 {
+            box-sizing: border-box;
+            width: 100%;
+            height: auto;
+            max-width: 630px;
+            margin: 0 auto;
+            display: inline-block;
+            /* margin: 20px; */
+            overflow: hidden;
+            border-radius: 0.625rem;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+            transition: transform 0.5s;
+            cursor: pointer;
+        }
+
+        #carousel_3,
+        #carousel_4,
+        #carousel_7 {
+            box-sizing: border-box;
+            width: 100%;
+            height: auto;
+            max-width: 1320px;
+            margin: 0 auto;
+            display: inline-block;
+            /* margin: 20px; */
+            overflow: hidden;
+            border-radius: 0.625rem;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+            transition: transform 0.5s;
+            cursor: pointer;
+        }
+
+        button.carousel-control-prev,
+        button.carousel-control-next {
+            width: 32px;
+
+        }
+
+        button.carousel-control-prev {
+            padding-left: 2rem;
+
+
+        }
+
+        button.carousel-control-next {
+            padding-right: 2rem;
+
+        }
+
+
+
+
+
+        #carousel_3 img,
+        #carousel_7 img {
+            /* width: 100%;
+            height: auto; */
+            max-width: 880px;
+            max-height: 525px;
+
+        }
+
+
+
+        /* .carousel-item-2 {
+            width: 100%;
+            height: auto;
+            max-width: 630px;
+            cursor: pointer;
+
+        } */
+
+        a.carousel_link {
+            display: block;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .carousel:hover {
+            /* 懸停時的動畫效果 */
+            animation: float 2s infinite ease-in-out;
+            cursor: pointer;
+        }
+
+
+        .carousel-item-bg1 {
+            background: url("./assets/img/img_knot.svg") no-repeat;
+            /* background-size: cover; */
+            background-position: 25% -75%;
+        }
+
+        .carousel-caption {
+            top: 100%;
+            /* 將標題和文字推到圖片下方 */
+        }
+
+        .carousel-inner {
+            overflow: visible;
+            /* 允許標題和文字顯示在輪播容器外 */
+        }
+
+        .card_text {
+            margin: 2rem 0;
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            opacity: 1;
+        }
+
+        .btn_pre,
+        .btn_next {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: #0A5E66;
+            position: absolute;
+            top: 36%;
+        }
+
+        .btn_pre img,
+        .btn_next img {
+            width: 20px;
+            height: 9px;
+        }
+
+
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateX(0) rotate(0deg);
+            }
+
+            30% {
+                transform: translateX(-4px) rotate(-1deg);
+            }
+
+            40% {
+                transform: translateX(4px) rotate(1deg);
+            }
+
+            50% {
+                transform: translateX(-6px);
+            }
+
+            75% {
+                transform: translateX(6px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <!-- End Google Tag Manager (noscript) -->
+
+
+    <!-- navbar 區塊 -->
+    <nav class="l-navbar">
+        <div class="conatainer-fluid d-flex flex-wrap
+                justify-content-between align-items-center">
+            <div class="l-navbar__brand d-flex">
+                <a class="navbar__brand" href="https://www.cwlearning.com.tw/" target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="assets/img/logo/logo-cw.png" alt="天下學習">
+                </a>
+                <a class="navbar__brand" href="https://www.cheers.com.tw/" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/img/logo/logo-cheers.png" alt="Cheers快樂工作人">
+                </a>
+                <a class="navbar__brand" href="https://www.cheers.com.tw/talent" target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="assets/img/logo/logo-talent.png" alt="人才永續頻道">
+                </a>
+            </div>
+            <div class="l-navbar__toggler">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="l-navbar__menu d-md-flex align-items-center">
+
+                <li class="l-navbar__menu__items">
+                    <a href="#partner_companies" gtm-name="專輯-2024-best-employers" gtm-action="互動事件"
+                        gtm-label="點擊-合作企業">合作企業</a>
+                </li>
+
+                <li class="l-navbar__menu__items">
+                    <a href="#good_employers" gtm-name="專輯-2024-best-employers" gtm-action="互動事件"
+                        gtm-label="點擊-好雇主，好故事">好雇主，好故事</a>
+                </li>
+
+                <li class="l-navbar__menu__items">
+                    <a href="#podcast" gtm-name="專輯-2024-best-employers" gtm-action="互動事件"
+                        gtm-label="點擊-精彩好聲音">精彩好聲音</a>
+                </li>
+
+                <li class="l-navbar__menu__items">
+                    <a href="#read_more" gtm-name="專輯-2024-best-employers" gtm-action="互動事件"
+                        gtm-label="點擊-延伸閱讀">延伸閱讀</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- navbar 區塊 end -->
+
+    <!-- 首頁區塊start -->
+    <section class="p-hero">
+        <!-- KV TITLE -->
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="p-hero__wrapper animate__animated animate__fadeInRight">
+                    <h1 class="p-hero__title">
+                        <div class="imgWrap desktop">
+                            <img src="assets/img/img_text_kv.svg" alt="台灣好雇主">
+                        </div>
+
+                    </h1>
+                </div>
+                <div class="col-md-6 col-12 p-hero__img desktop animate__animated animate__fadeInRight">
+                    <img src="assets/img/img_line_animated.svg" alt="">
+                </div>
+                <div class="p__role">
+                    <img class="role1 animate__animated animate__fadeInRight" src="assets/img/img_leader.png">
+                    <img class="role2 animate__animated animate__fadeInRight" src="assets/img/img_management1.png">
+                    <img class="role3 animate__animated animate__fadeInRight" src="assets/img/img_management2.png">
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- 首頁區塊end -->
+
+
+
+    <!-- 前言區塊start -->
+    <section class="p-about" id="partner_companies" style="position: relative; z-index: -2;">
+        <div class="container">
+            <div class="row">
+                <div class="p__title--alt ">
+                    <h3 class="p__h3" style="background-color: #81f486; color: #000;">合作企業</h3>
+                </div>
+                <div class="marquee">
+                    <ul class="marquee-content">
+                        <li><img src="./assets/img/logo_synopsys.png" alt=""></li>
+                        <li><img src="./assets/img/logo_te.png" alt=""></li>
+                        <li><img src="./assets/img/logo_auo.png" alt=""></li>
+                        <li><img src="./assets/img/logo_more.png" alt=""></li>
+                        <li><img src="./assets/img/logo_blendvision.png" alt=""></li>
+                        <li><img src="./assets/img/logo_foodpanda.png" alt=""></li>
+                        <li><img src="./assets/img/logo_sinbon.png" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 前言區塊end -->
+
+    <!-- 三大效益start -->
+    <section id="good_employers" class="p-benefits" style="overflow: hidden;">
+        <div class="container">
+            <div class="row" style="padding: 3rem 0;">
+                <div class="p__title--alt">
+                    <h3 class="p__h3">好雇主，好故事</h3>
+                </div>
+            </div>
+
+            <div id="carousel_1" class="carousel slide carousel-item-2 col-6" data-bs-ride="carousel"
+                data-bs-wrap="true" data-bs-interval="1500" style="float: left;">
+                <div class="carousel-inner">
+                    <div class="carousel-item carousel-item-bg1 active">
+                        <a class="text-center" href="https://www.cheers.com.tw/article/article.action?id=5101828">
+                            <img src="https://picsum.photos/645/385/?random=21" class="d-block w-100">
+                            <div class="card_text text-dark p-article__text">
+                                <h3 class="p__h4">台灣新思科技</h3>
+                                <span>多元、平等、共融，員工充滿獨特性</span>
+                            </div>
+                            <div class="text-end pe-3">
+                                <a href="https://web.cheers.com.tw/event/talent/article/adList.html" class="me-3
+                                            d-inline-block
+                                            p-participate__more mb-3">MORE
+                                    <img src="assets/img/arrow.svg" alt="">
+                                </a>
+                            </div>
+                        </a>
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+
+                    </div>
+                    <div class="carousel-item carousel-item-bg1">
+                        <a class="text-center" href="https://www.cheers.com.tw/article/article.action?id=5101828">
+                            <img src="./assets/img/img_synopsys_story1.png" class="d-block w-100">
+                            <div class="card_text text-dark p-article__text">
+                                <h3 class="p__h4">台灣新思科技</h3>
+                                <span>三大面向著手，交出超高員工滿意度成績單</span>
+                            </div>
+                            <div class="text-end pe-3">
+                                <a href="https://web.cheers.com.tw/event/talent/article/adList.html" class="me-3
+                                            d-inline-block
+                                            p-participate__more mb-3">MORE
+                                    <img src="assets/img/arrow.svg" alt="">
+                                </a>
+                            </div>
+                        </a>
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                    </div>
+                    <!-- 更多輪播項目... -->
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel_1" data-bs-slide="prev">
+                    <span class="btn_pre" aria-hidden="true"><img src="./assets/img/btn_pre.svg" alt=""></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel_1" data-bs-slide="next">
+                    <span class="btn_next" aria-hidden="true"><img src="./assets/img/btn_next.svg" alt=""></span>
+                </button>
+            </div>
+
+            <div id="carousel_2" class="carousel slide carousel-item-2" data-bs-ride="carousel" data-bs-wrap="true"
+                data-bs-interval="3000" style="float: right;">
+                <div class="carousel-inner">
+                    <div class="carousel-item carousel-item-bg1 active">
+                        <a class="text-center" href="https://www.google.com">
+
+                            <div class="card_text text-dark p-article__text">
+                                <h3 class="p__h4">華城電機</h3>
+                                <span>創新舞台賦能，培育人才不遺餘力</span>
+                            </div>
+
+                            <div class="text-end pe-3">
+                                <a href="https://web.cheers.com.tw/event/talent/article/adList.html" class="me-3
+                                            d-inline-block
+                                            p-participate__more mb-3">MORE
+                                    <img src="assets/img/arrow.svg" alt="">
+                                </a>
+                            </div>
+                            <img src="./assets/img/img_te_story1.png" class="d-block w-100">
+
+                        </a>
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+
+                    </div>
+                    <div class="carousel-item carousel-item-bg1">
+                        <a class="text-center" href="https://www.google.com">
+
+                            <div class="card_text text-dark p-article__text">
+                                <h3 class="p__h4">華城電機</h3>
+                                <span>用電傳愛，創新舞台賦能，實踐永續人才</span>
+                            </div>
+
+                            <div class="text-end pe-3">
+                                <a href="https://web.cheers.com.tw/event/talent/article/adList.html" class="me-3
+                                            d-inline-block
+                                            p-participate__more mb-3">MORE
+                                    <img src="assets/img/arrow.svg" alt="">
+                                </a>
+                            </div>
+
+                            <img src="./assets/img/img_te_story1.png" class="d-block w-100">
+
+                        </a>
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                    </div>
+                    <!-- 更多輪播項目... -->
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel_2" data-bs-slide="prev"
+                    style="position: absolute; top: 50%;">
+                    <span class="btn_pre" aria-hidden="true"><img src="./assets/img/btn_pre.svg" alt=""></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel_2" data-bs-slide="next"
+                    style="position: absolute; top: 50%;">
+                    <span class="btn_next" aria-hidden="true"><img src="./assets/img/btn_next.svg" alt=""></span>
+                </button>
+            </div>
+
+            <div id="carousel_3" class="carousel slide col-12 mt-5 col-6" data-bs-ride="carousel" data-bs-wrap="true"
+                data-bs-interval="2000">
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <div class="row g-0">
+                            <div class="col-9" style="width: 880px;">
+                                <a href="https://www.cheers.com.tw/article/article.action?id=5101466" target="_blank">
+                                    <img src="https://picsum.photos/880/525/?random=1" class="d-block w-100" alt="...">
+                                </a>
+                            </div>
+                            <div class="col-3 d-flex flex-column justify-content-center align-items-center"
+                                style="width: 32%;">
+                                <div class="card-body d-flex align-items-center text-center">
+                                    <a href="https://www.cheers.com.tw/article/article.action?id=5101466"
+                                        target="_blank">
+                                        <div class="card_text text-dark p-article__text">
+                                            <h3 class="p__h4">友達光電</h3>
+                                            <span>打造友善職場環境，企業給得起的信任感</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="text-end pe-3" style="position: absolute; right:0; bottom: 1rem;">
+                                    <a href="https://www.cheers.com.tw/article/article.action?id=5101466" class="me-3
+                                                d-inline-block
+                                                p-participate__more mb-3">MORE
+                                        <img src="assets/img/arrow.svg" alt="" style="width: 56px; height: 14px;">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row g-0">
+                            <div class="col-9" style="width: 880px;">
+                                <a href="hhttps://www.cheers.com.tw/article/article.action?id=5101466" target="_blank">
+                                    <img src="./assets/img/img_auo_story2.png" class="d-block w-100" alt="...">
+                                </a>
+                            </div>
+                            <div class="col-3 d-flex flex-column justify-content-center align-items-center"
+                                style="width: 32%;">
+                                <div class="card-body d-flex align-items-center text-center">
+                                    <a href="hhttps://www.cheers.com.tw/article/article.action?id=5101466"
+                                        target="_blank">
+                                        <div class="card_text text-dark p-article__text">
+                                            <h3 class="p__h4">友達光電</h3>
+                                            <span>女力成主力，只要有能力，職涯不受限</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="text-end pe-3" style="position: absolute; right:0; bottom: 1rem;">
+                                    <a href="https://www.cheers.com.tw/article/article.action?id=5101466" class="me-3
+                                                d-inline-block
+                                                p-participate__more mb-3">MORE
+                                        <img src="assets/img/arrow.svg" alt="" style="width: 56px; height: 14px;">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel_3" data-bs-slide="prev">
+                    <span class="btn_pre" aria-hidden="true"><img src="./assets/img/btn_pre.svg" alt=""></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel_3" data-bs-slide="next">
+                    <span class="btn_next" aria-hidden="true"><img src="./assets/img/btn_next.svg" alt=""></span>
+                </button>
+
+            </div>
+
+            <div id="carousel_4" class="carousel slide col-12 mt-5" data-bs-ride="carousel" data-bs-wrap="true"
+                data-bs-interval="2000">
+                <div class="carousel-inner">
+
+
+
+                    <div class="carousel-item active">
+                        <div class="row g-0">
+                            <div class="col-md-6 d-flex flex-column justify-content-center  align-items-center">
+                                <div class="card-body d-flex align-items-center text-center">
+                                    <a href="hhttps://www.cheers.com.tw/article/article.action?id=5101466"
+                                        target="_blank">
+                                        <div class="align-middle text-dark">
+                                            <h5 class="card-title">默爾MOR</h5>
+                                            <p class="card-text">Z世代組成的職場，Z世代的語言</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="text-end ps-3" style="position: absolute; left: 38.4%; bottom: 1rem;">
+                                    <a href="https://www.cheers.com.tw/article/article.action?id=5101466" class="me-3
+                                            d-inline-block
+                                            p-participate__more mb-3">MORE
+                                        <img src="assets/img/arrow.svg" alt="" style="width: 56px; height: 14px;">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <a href="hhttps://www.cheers.com.tw/article/article.action?id=5101466" target="_blank">
+                                    <img src="./assets/img/img_more_story1.png" class="d-block w-100" alt="...">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row g-0">
+                            <div class="col-md-6 d-flex flex-column justify-content-center  align-items-center">
+                                <div class="card-body d-flex align-items-center text-center">
+                                    <a href="hhttps://www.cheers.com.tw/article/article.action?id=5101466"
+                                        target="_blank">
+                                        <div class="align-middle text-dark">
+                                            <h5 class="card-title">默爾MOR</h5>
+                                            <p class="card-text">餐廳的靈魂，永遠是人才；企業的進步來自人才的成長</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="text-end ps-3" style="position: absolute; left: 38.4%; ; bottom: 1rem;">
+                                    <a href="https://www.cheers.com.tw/article/article.action?id=5101466" class="me-3
+                                            d-inline-block
+                                            p-participate__more mb-3">MORE
+                                        <img src="assets/img/arrow.svg" alt="" style="width: 56px; height: 14px;">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <a href="hhttps://www.cheers.com.tw/article/article.action?id=5101466" target="_blank">
+                                    <img src="https://picsum.photos/880/525/?random=2" class="d-block w-100" alt="...">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel_4" data-bs-slide="prev">
+                    <span class="btn_pre" aria-hidden="true"><img src="./assets/img/btn_pre.svg" alt=""></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel_4" data-bs-slide="next">
+                    <span class="btn_next" aria-hidden="true"><img src="./assets/img/btn_next.svg" alt=""></span>
+                </button>
+
+            </div>
+
+            <div id="carousel_5" class="carousel slide carousel-item-2 mt-5" data-bs-ride="carousel" data-bs-wrap="true"
+                data-bs-interval="1500" style="float: left;">
+                <div class="carousel-inner">
+                    <div class="carousel-item carousel-item-bg1 active">
+                        <a class="text-center" href="https://www.cheers.com.tw/talent/article.action?id=5102871">
+                            <img src="https://picsum.photos/645/385/?random=21" class="d-block w-100">
+                            <div class="card_text text-dark p-article__text">
+                                <h3 class="p__h4">BlendVision</h3>
+                                <span>科技人發揮所長，站上時代浪尖的夢幻舞台</span>
+                            </div>
+                            <div class="text-end pe-3">
+                                <a href="https://web.cheers.com.tw/event/talent/article/adList.html" class="me-3
+                                        d-inline-block
+                                        p-participate__more mb-3">MORE
+                                    <img src="assets/img/arrow.svg" alt="">
+                                </a>
+                            </div>
+                        </a>
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+
+                    </div>
+                    <div class="carousel-item carousel-item-bg1">
+                        <a class="text-center" href="https://www.cheers.com.tw/talent/article.action?id=5102871">
+                            <img src="./assets/img/img_blendvision_story2.png" class="d-block w-100">
+                            <div class="card_text text-dark p-article__text">
+                                <h3 class="p__h4">BlendVision</h3>
+                                <span>客製化指導，最懂你的陪跑教練助你接軌職涯</span>
+                            </div>
+                            <div class="text-end pe-3">
+                                <a href="https://web.cheers.com.tw/event/talent/article/adList.html" class="me-3
+                                        d-inline-block
+                                        p-participate__more mb-3">MORE
+                                    <img src="assets/img/arrow.svg" alt="">
+                                </a>
+                            </div>
+                        </a>
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                    </div>
+                    <!-- 更多輪播項目... -->
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel_5" data-bs-slide="prev">
+                    <span class="btn_pre" aria-hidden="true"><img src="./assets/img/btn_pre.svg" alt=""></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel_5" data-bs-slide="next">
+                    <span class="btn_next" aria-hidden="true"><img src="./assets/img/btn_next.svg" alt=""></span>
+                </button>
+            </div>
+
+            <div id="carousel_6" class="carousel slide carousel-item-2  mt-5" data-bs-ride="carousel"
+                data-bs-wrap="true" data-bs-interval="3000" style="float: right;">
+                <div class="carousel-inner">
+                    <div class="carousel-item carousel-item-bg1 active">
+                        <a class="text-center" href="https://www.google.com">
+
+                            <div class="card_text text-dark p-article__text">
+                                <h3 class="p__h4">foodpanda</h3>
+                                <span>科技人才嚮往的理想職場</span>
+                            </div>
+
+                            <div class="text-end pe-3">
+                                <a href="https://web.cheers.com.tw/event/talent/article/adList.html" class="me-3
+                                        d-inline-block
+                                        p-participate__more mb-3">MORE
+                                    <img src="assets/img/arrow.svg" alt="">
+                                </a>
+                            </div>
+                            <img src="./assets/img/img_foodpanda_story1.png" class="d-block w-100">
+
+                        </a>
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+
+                    </div>
+                    <div class="carousel-item carousel-item-bg1">
+                        <a class="text-center" href="https://www.google.com">
+
+                            <div class="card_text text-dark p-article__text">
+                                <h3 class="p__h4">foodpanda</h3>
+                                <span>科技人才嚮往的理想職場</span>
+                            </div>
+
+                            <div class="text-end pe-3">
+                                <a href="https://web.cheers.com.tw/event/talent/article/adList.html" class="me-3
+                                        d-inline-block
+                                        p-participate__more mb-3">MORE
+                                    <img src="assets/img/arrow.svg" alt="">
+                                </a>
+                            </div>
+
+                            <img src="./assets/img/img_te_story1.png" class="d-block w-100">
+
+                        </a>
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                    </div>
+                    <!-- 更多輪播項目... -->
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel_6" data-bs-slide="prev"
+                    style="position: absolute; top: 50%;">
+                    <span class="btn_pre" aria-hidden="true"><img src="./assets/img/btn_pre.svg" alt=""></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel_6" data-bs-slide="next"
+                    style="position: absolute; top: 50%;">
+                    <span class="btn_next" aria-hidden="true"><img src="./assets/img/btn_next.svg" alt=""></span>
+                </button>
+            </div>
+            <div id="carousel_7" class="carousel slide col-12 mt-5" data-bs-ride="carousel" data-bs-wrap="true"
+                data-bs-interval="2000">
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active carousel-item-start">
+                        <div class="row g-0">
+                            <div class="col-9" style="width: 880px;">
+                                <a href="https://www.cheers.com.tw/article/article.action?id=5101762" target="_blank">
+                                    <img src="https://picsum.photos/880/525/?random=1" class="d-block w-100" alt="...">
+                                </a>
+                            </div>
+                            <div class="col-3 d-flex flex-column justify-content-center align-items-center"
+                                style="width: 32%;">
+                                <div class="card-body d-flex align-items-center text-center">
+                                    <a href="https://www.cheers.com.tw/article/article.action?id=5101762"
+                                        target="_blank">
+                                        <div class="card_text text-dark p-article__text">
+                                            <h3 class="p__h4">信邦電子</h3>
+                                            <span>沈浸式學習氛圍，幫助人才快速上手</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="text-end pe-3" style="position: absolute; right:0; bottom: 1rem;">
+                                    <a href="https://www.cheers.com.tw/article/article.action?id=5101762" class="me-3
+                                                d-inline-block
+                                                p-participate__more mb-3">MORE
+                                        <img src="assets/img/arrow.svg" alt="" style="width: 56px; height: 14px;">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item carousel-item-next carousel-item-start">
+                        <div class="row g-0">
+                            <div class="col-9" style="width: 880px;">
+                                <a href="https://www.cheers.com.tw/article/article.action?id=5101762" target="_blank">
+                                    <img src="./assets/img/img_sinbon_story2.png" class="d-block w-100" alt="...">
+                                </a>
+                            </div>
+                            <div class="col-3 d-flex flex-column justify-content-center align-items-center"
+                                style="width: 32%;">
+                                <div class="card-body d-flex align-items-center text-center">
+                                    <a href="https://www.cheers.com.tw/article/article.action?id=5101762"
+                                        target="_blank">
+                                        <div class="card_text text-dark p-article__text">
+                                            <h3 class="p__h4">信邦電子</h3>
+                                            <span>厚植人才能力，領取登上世界舞台的門票</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="text-end pe-3" style="position: absolute; right:0; bottom: 1rem;">
+                                    <a href="https://www.cheers.com.tw/article/article.action?id=5101762" class="me-3
+                                                d-inline-block
+                                                p-participate__more mb-3">MORE
+                                        <img src="assets/img/arrow.svg" alt="" style="width: 56px; height: 14px;">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel_7" data-bs-slide="prev">
+                    <span class="btn_pre" aria-hidden="true"><img src="./assets/img/btn_pre.svg" alt=""></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel_7" data-bs-slide="next">
+                    <span class="btn_next" aria-hidden="true"><img src="./assets/img/btn_next.svg" alt=""></span>
+                </button>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- 三大效益end -->
+
+    <!-- 加入連署start -->
+    <section id="podcast" class="p-join">
+        <div class="container">
+            <div class="row" style="padding: 3rem 0;">
+                <div class="podcast p__title--alt">
+                    <h3 class="p__h3" style="color: #000; background-color: rgba(0, 0, 0, 0);">精彩好聲音</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0"
+                        height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;"
+                        sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
+                        src="https://embed.podcasts.apple.com/tw/podcast/%E4%BA%BA%E6%89%8D%E6%88%B0%E6%83%85%E5%AE%A4ep-54-%E4%BD%8E%E8%AA%BF%E5%A4%96%E5%95%86%E7%9A%84%E5%A4%9A%E5%85%83%E5%85%B1%E8%9E%8D%E4%B9%8B%E9%81%93-8%E6%88%90%E9%9B%A2%E8%81%B7%E5%93%A1%E5%B7%A5%E9%83%BD%E9%A1%98%E6%84%8F%E5%9B%9E%E4%BB%BB-%E5%90%88%E4%BD%9C%E6%8E%A8%E8%96%A6-%E5%8F%B0%E7%81%A3%E6%96%B0%E6%80%9D%E7%A7%91%E6%8A%80/id1590058994?i=1000658525214"></iframe>
+                    <div class="p-article__text text-dark">
+                        <h4 class="p__h4">【人才戰情室Ep.54】</h4>
+                        <span>
+                            低調外商的多元共融之道！8成離職員工都願意回任－合作推薦：台灣新思科技
+                        </span>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0"
+                        height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;"
+                        sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
+                        src="https://embed.podcasts.apple.com/tw/podcast/%E4%BA%BA%E6%89%8D%E6%88%B0%E6%83%85%E5%AE%A4ep-54-%E4%BD%8E%E8%AA%BF%E5%A4%96%E5%95%86%E7%9A%84%E5%A4%9A%E5%85%83%E5%85%B1%E8%9E%8D%E4%B9%8B%E9%81%93-8%E6%88%90%E9%9B%A2%E8%81%B7%E5%93%A1%E5%B7%A5%E9%83%BD%E9%A1%98%E6%84%8F%E5%9B%9E%E4%BB%BB-%E5%90%88%E4%BD%9C%E6%8E%A8%E8%96%A6-%E5%8F%B0%E7%81%A3%E6%96%B0%E6%80%9D%E7%A7%91%E6%8A%80/id1590058994?i=1000658525214"></iframe>
+                    <div class="p-article__text text-dark">
+                        <h4 class="p__h4">【人才戰情室Ep.55】</h4>
+                        <span>
+                            低調外商的多元共融之道！8成離職員工都願意回任－合作推薦：台灣新思科技
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 加入連署end -->
+
+    <!-- 案例報導start -->
+    <section id="read_more" class="p-article">
+        <div class="container">
+            <div class="row">
+                <div class="p__title--alt ">
+                    <h3 class="p__h3">延伸閱讀</h3>
+                </div>
+            </div>
+            <div class="row row-cols-md-3 mt-5">
+                <div class="p-article__item">
+                    <a href="https://www.cheers.com.tw/talent/article.action?id=5103197" target="_blank" rel="noopener
+                                noreferrer">
+                        <div class="imgWrap">
+                            <img src="./assets/img/img_dei.png" alt="">
+                        </div>
+                        <div class="p-article__text">
+                            <h4 class="p__h4">DEI</h4>
+                            <span style="letter-spacing: -1px;">
+                                政治正確、好福利就是DEI？台灣企業常見６大DEI迷思
+                            </span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="p-article__item">
+                    <a href="https://www.cheers.com.tw/talent/article.action?id=5103039" target="_blank" rel="noopener
+                                noreferrer">
+                        <div class="imgWrap">
+                            <img src="./assets/img/img_credence.png" alt="">
+                        </div>
+                        <div class="p-article__text">
+                            <h4 class="p__h4">組織信任</h4>
+                            <span>
+                                愈來愈多員工「不信任公司」！全球研究：關鍵在是否做到這３件事
+                            </span>
+                        </div>
+                    </a>
+                </div>
+                <div class="p-article__item">
+                    <a href="https://www.cheers.com.tw/talent/article.action?id=5103034" target="_blank" rel="noopener
+                                noreferrer">
+                        <div class="imgWrap">
+                            <img src="./assets/img/img_org.png" alt="">
+                        </div>
+                        <div class="p-article__text">
+                            <h4 class="p__h4">財務支持</h4>
+                            <span>
+                                有財務困擾的員工，跳槽機率高２倍！亞馬遜、Google都在教員工理財
+                            </span>
+                        </div>
+                    </a>
+                </div>
+                <div class="p-article__item">
+                    <a href="https://www.cheers.com.tw/talent/article.action?id=5102913" target="_blank" rel="noopener
+                                noreferrer">
+                        <div class="imgWrap">
+                            <img src="./assets/img/img_workplace_health.png" alt="">
+                        </div>
+                        <div class="p-article__text">
+                            <h4 class="p__h4">職場健康</h4>
+                            <span>
+                                加班時間改在晨間，為何讓這間商社成為日本新鮮人最想應徵的公司？
+                            </span>
+                        </div>
+                    </a>
+                </div>
+                <div class="p-article__item">
+                    <a href="https://www.cheers.com.tw/talent/article.action?id=5102776" target="_blank" rel="noopener
+                                noreferrer">
+                        <div class="imgWrap">
+                            <img src="./assets/img/img_management.png" alt="">
+                        </div>
+                        <div class="p-article__text">
+                            <h4 class="p__h4">管理領導</h4>
+                            <span>
+                                稻盛和夫：我是這樣教出「用經營者角度思考」的員工
+                            </span>
+                        </div>
+                    </a>
+                </div>
+                <div class="p-article__item">
+                    <a href="https://www.cheers.com.tw/talent/article.action?id=5102733" target="_blank" rel="noopener
+                                noreferrer">
+                        <div class="imgWrap">
+                            <img src="./assets/img/img_tit.png" alt="">
+                        </div>
+                        <div class="p-article__text">
+                            <h4 class="p__h4">人才投資</h4>
+                            <span>
+                                為何全球５００大企業都在幫員工量身打造「IDP」？有這４點好處
+                            </span>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <!-- 行動現場end -->
+
+    <!--footer-->
+    <footer class="l-footer text-center px-3">
+        <br>Copyright © 2024 天下雜誌 版權所有 禁止擅自轉貼節錄
+    </footer>
+    <!-- End off footer Section-->
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/utmString.js"></script>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script>
+
+        document.querySelectorAll('.carousel').forEach(function (carouselElement) {
+            var carouselInstance = new bootstrap.Carousel(carouselElement);
+            carouselElement.addEventListener('mouseover', function () {
+                carouselInstance.cycle();
+            });
+            carouselElement.addEventListener('mouseout', function () {
+                carouselInstance.cycle();
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const carousels = [
+                { selector: '#carousel_1', interval: 2000 },
+                { selector: '#carousel_2', interval: 1000 },
+                { selector: '#myCarousel3', interval: 2500 },
+                { selector: '#myCarousel4', interval: 3000 }
+            ];
+
+            carousels.forEach(function (carousel) {
+                // 使用非同步的setTimeout和隨機延遲
+                setTimeout(function () {
+                    const myCarouselElement = document.querySelector(carousel.selector);
+                    const myCarousel = new bootstrap.Carousel(myCarouselElement, {
+                        interval: carousel.interval
+                    });
+                    // 啟動輪播器
+                    myCarousel.cycle();
+                }, Math.random() * 3000); // 隨機增加500到1500毫秒的延遲
+            });
+        });
+
+    </script>
+    <script type="text/javascript">
+        /** 捲動事件 */
+        function handleScrollDataLayer() {
+            var progressToSend = [25, 50, 75];
+            var onScroll = function () {
+                var pageHeight = document.body.clientHeight - window.innerHeight;
+                var scrollProgress = (window.scrollY / pageHeight) * 100;
+                // console.log('scrollProgress', Math.round(scrollProgress) + '％');
+                progressToSend.map(function (progress) {
+                    if (scrollProgress >= progress) {
+                        var eventData = {
+                            'event': 'sendEvent',
+                            'gtm-name': '專輯-2024-tit',
+                            'gtm-action': '頁面瀏覽',
+                            'gtm-label': '捲動頁面' + progressToSend.shift() + '%',
+                        };
+                        console.log('eventData', eventData);
+                        dataLayer.push(eventData);
+                        return;
+                    }
+                });
+                if (!progressToSend.length) {
+                    document.removeEventListener('scroll', onScroll);
+                }
+            }
+            document.addEventListener('scroll', onScroll);
+        }
+    </script>
+    <script>
+        new WOW().init();
+
+        const swiper = new Swiper('.valueSwiper', {
+            // Optional parameters
+            slidesPerView: "auto",
+            centeredSlides: true,
+            spaceBetween: 30,
+            loop: true,
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-arrow__next',
+                prevEl: '.swiper-arrow__prev',
+            },
+
+
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: true,
+            },
+        });
+    </script>
+    <script>
+        /* When the user clicks on the button, 
+            toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (e) {
+            if (!e.target.matches(".dropbtn")) {
+                var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains("show")) {
+                    myDropdown.classList.remove("show");
+                }
+            }
+        };
+
+    </script>
+    <script>
+        const root = document.documentElement;
+        const marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue("--marquee-elements-displayed");
+        const marqueeContent = document.querySelector("ul.marquee-content");
+
+        root.style.setProperty("--marquee-elements", marqueeContent.children.length);
+
+        for (let i = 0; i < marqueeElementsDisplayed; i++) {
+            marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
+        }
+    </script>
+    <!-- <script>
+                $(".p-value__item").click(function(){
+                    $(".p-value__item").removeClass("active");
+                    $(this).addClass("active");   
+                    });
+            </script> -->
+</body>
+
+</html>
