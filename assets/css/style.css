@@ -428,7 +428,7 @@ ul {
   bottom: 20px;
   right: 20px;
   display: none;
-  z-index: 999;
+  z-index: 3;
 }
 
 button,
@@ -1414,6 +1414,8 @@ section#good_employers {
   background-color: #7CF681;
   padding: 5.2rem 1rem;
   color: #0A5E66;
+  position: relative; 
+  z-index: -2;
   /* Landscape */
   /* Declare the same value for min- and max-width to avoid colliding with desktops */
   /* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
@@ -1439,24 +1441,10 @@ section#good_employers {
   color: #000;
 }
 
-.p-about__content {
-  position: relative;
-}
-@media only screen and (min-width: 768px) and (max-width: 1180px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
-  .p-about__content::before {
-    top: 0;
-    left: -5rem;
-    transform: translatex(0);
-  }
-}
+
 @media (min-width: 1200px) {
   #partner_companies {
     padding: 7rem 0;
-  }
-  .p-about__content::before {
-    top: 0;
-    left: -5rem;
-    transform: translatex(0);
   }
 }
 .p-summ {
@@ -2018,7 +2006,18 @@ img.role_all{
 }
 .p-sponsor__item a img {
   height: 100%;
+  width: auto;
+  min-height: 44px;
 }
+
+@media (max-width: 767px) {
+  .p-sponsor__item {
+  flex-wrap: nowrap;
+  }
+  .p-sponsor__item a {
+  flex: 0 0 auto; /* 這會讓每個a元素保持原本的大小，不會伸縮 */
+  }
+  }
 
 .p-benefits__wrapper {
   margin-top: -1rem !important;
