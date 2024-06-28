@@ -73,7 +73,54 @@ jQuery(document).ready(function () {
 
 });
 
+// Inline popups
+$('#inline-popups').magnificPopup({
+    delegate: 'a',
+    removalDelay: 500, //delay removal by X to allow out-animation
+    callbacks: {
+        beforeOpen: function () {
+            this.st.mainClass = this.st.el.attr('data-effect');
+        }
+    },
+    midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
+});
+$('.popup-zoom').magnificPopup({
+    type: 'inline',
+    fixedContentPos: false,
+    fixedBgPos: true,
+    overflowY: 'auto',
+    closeBtnInside: true,
+    preloader: false,
+    midClick: true,
+    removalDelay: 500,
+    mainClass: 'my-mfp-zoom-in',
+    callbacks: {
+        beforeOpen: function () {
+            this.st.mainClass = this.st.el.attr('data-effect');
+        }
+    },
+});
 
+$(document).ready(function () {
+    $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+        disableOn: 700,
+        type: 'iframe',
+        mainClass: 'mfp-fade',
+        removalDelay: 160,
+        preloader: false,
+
+        fixedContentPos: false
+    });
+
+    $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+        type: 'iframe',
+        mainClass: 'mfp-fade',
+        removalDelay: 160,
+        preloader: false,
+
+        fixedContentPos: false
+    });
+});
 //speaker box
 var speakerNo;
 $(".popup-zoom").click(function () {
