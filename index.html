@@ -67,6 +67,7 @@
         fbq('init', '1755680481303720');
         fbq('track', 'PageView');
     </script>
+
     <noscript><img height="1" width="1" style="display:none"
             src="https://www.facebook.com/tr?id=1755680481303720&ev=PageView&noscript=1" /></noscript>
     <!-- End Meta Pixel Code -->
@@ -780,10 +781,11 @@
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
-    <script src="./assetsjs/jquery.easing.min.js"></script>
+    <!-- <script src="./assetsjs/jquery.easing.min.js"></script> -->
     <script src="./assets/js/wow.min.js"></script>
     <script src="./assets/js/custom.js"></script>
     <script src="./assets/js/utmString.js"></script>
@@ -818,47 +820,7 @@
             document.addEventListener('scroll', onScroll);
         }
     </script>
-    <script>
-        new WOW().init();
 
-        const swiper = new Swiper('.valueSwiper', {
-            // Optional parameters
-            slidesPerView: "auto",
-            centeredSlides: true,
-            spaceBetween: 30,
-            loop: true,
-
-            // Navigation arrows
-            navigation: {
-                nextEl: '.swiper-arrow__next',
-                prevEl: '.swiper-arrow__prev',
-            },
-
-
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: true,
-            },
-        });
-    </script>
-    <script>
-        /* When the user clicks on the button, 
-            toggle between hiding and showing the dropdown content */
-        function myFunction() {
-            document.getElementById("myDropdown").classList.toggle("show");
-        }
-
-        // Close the dropdown if the user clicks outside of it
-        window.onclick = function (e) {
-            if (!e.target.matches(".dropbtn")) {
-                var myDropdown = document.getElementById("myDropdown");
-                if (myDropdown.classList.contains("show")) {
-                    myDropdown.classList.remove("show");
-                }
-            }
-        };
-
-    </script>
     <script>
         //Get the button
         let mybutton = document.getElementById("btn-back-to-top");
@@ -886,30 +848,35 @@
             document.documentElement.scrollTop = 0;
         }
     </script>
-    <script>
-        // Intercept anchor click events with JavaScript
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault(); // Prevent default anchor jump behavior
-
-                // Get the ID of the target element
-                var targetId = this.getAttribute('href');
-                var target = document.querySelector(targetId);
-
-                // Scroll to the target element
-                if (target) {
-                    window.scrollTo({
-                        top: target.offsetTop,
-                        behavior: 'smooth'
-                    });
-
-                    // Update the URL hash
-                    history.pushState(null, null, targetId);
-                }
-            });
-        });
-    </script>
 
 </body>
+<script>
+    $(document).ready(function () {
+        // When an element with an anchor link is clicked
+        $('a[href^="#"]').click(function (e) {
+            // Prevent the default anchor click behavior
+            e.preventDefault();
+
+            // Get the href attribute value of the anchor, which is the target ID
+            var targetId = $(this).attr('href');
+
+            // Add a random parameter to the URL to prevent caching
+            var noCacheUrl = window.location.href.split('#')[0] + '?nocache=' + (new Date()).getTime() + targetId;
+
+            // Change the browser's URL without reloading the page
+            window.history.pushState({}, '', noCacheUrl);
+
+            // If the target ID exists on the page
+            if ($(targetId).length) {
+                // Smoothly scroll to the position of the anchor
+                $('html, body').animate({
+                    scrollTop: $(targetId).offset().top
+                }, 100); // Complete the scroll within 100 milliseconds
+            }
+        });
+    });
+</script>
+
+
 
 </html>
