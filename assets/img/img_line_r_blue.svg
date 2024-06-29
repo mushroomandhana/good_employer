@@ -1,0 +1,9 @@
+<svg width="2006" height="1244" viewBox="0 0 2006 1244" fill="none" xmlns="http://www.w3.org/2000/svg" style="">
+<path d="M1997 47.7996C1860.8 9.92299 1418.86 -3.53333 1167.29 394.171C879.936 848.462 737.184 1160.18 3 1214" stroke="url(#paint0_linear_571_157)" stroke-width="60" class="ilEvpwSp_0"></path>
+<defs>
+<linearGradient id="paint0_linear_571_157" x1="1000" y1="30" x2="1000" y2="1214" gradientUnits="userSpaceOnUse">
+<stop stop-color="#DEF7FD"></stop>
+<stop offset="1" stop-color="#7CE0F6" stop-opacity="0"></stop>
+</linearGradient>
+</defs>
+<style data-made-with="vivus-instant">.ilEvpwSp_0{stroke-dasharray:2466 2468;stroke-dashoffset:2467;animation:ilEvpwSp_draw_0 7200ms linear 0ms infinite,ilEvpwSp_fade 7200ms linear 0ms infinite;}@keyframes ilEvpwSp_draw{100%{stroke-dashoffset:0;}}@keyframes ilEvpwSp_fade{0%{stroke-opacity:1;}94.44444444444444%{stroke-opacity:1;}100%{stroke-opacity:0;}}@keyframes ilEvpwSp_draw_0{11.11111111111111%{stroke-dashoffset: 2467}38.88888888888889%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}</style></svg>

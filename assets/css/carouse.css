@@ -1,0 +1,360 @@
+.carousel-style {
+    /* box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    min-width: 200px;
+    margin: 0 auto;
+    display: inline-block;
+    margin: 20px; */
+    overflow: hidden;
+    border-radius: 0.625rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    transition: transform 0.5s;
+    /* cursor: pointer; */
+
+  }
+
+  /* .carousel-item {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    min-width: 200px;
+    cursor: pointer;
+
+  } */
+
+  a.carousel_link {
+    display: block;
+    overflow: hidden;
+    /* cursor: pointer; */
+  }
+
+  .carousel-style:hover {
+    /* 懸停時的動畫效果 */
+    animation: float 2s infinite ease-in-out;
+    /* cursor: pointer; */
+  }
+
+
+
+  @keyframes float {
+
+    0%,
+    100% {
+      transform: translateX(0) rotate(0deg);
+    }
+
+    30% {
+      transform: translateX(-4px) rotate(-1deg);
+    }
+
+    40% {
+      transform: translateX(4px) rotate(1deg);
+    }
+
+    50% {
+      transform: translateX(-6px);
+    }
+
+    75% {
+      transform: translateX(6px);
+    }
+  }
+
+  /* 在小於768px的屏幕上，將文字移動到圖片上方 */
+@media (max-width: 767.98px) {
+    .carousel-item .col-12 {
+    display: flex;
+    flex-direction: column-reverse;
+    }
+    }
+
+
+    :root {
+      --marquee-width: 54vw;
+      --marquee-height: 20vh;
+      /* --marquee-elements: 12; */
+      /* defined with JavaScript */
+      --marquee-elements-displayed: 5;
+      --marquee-element-width: calc(var(--marquee-width) / var(--marquee-elements-displayed));
+      --marquee-animation-duration: calc(var(--marquee-elements) * 3s);
+  }
+
+  .marquee {
+      /* width: var(--marquee-width); */
+      width: 100%;
+      height: var(--marquee-height);
+      /* background-color: #111; */
+      /* color: #eee; */
+      overflow: hidden;
+      position: relative;
+  }
+
+  .marquee img {
+      width: 100%;
+      height: auto;
+  }
+
+  .marquee li:nth-child(6) img {
+      width: 50px;
+      height: auto;
+  }
+
+
+
+  .marquee:before,
+  .marquee:after {
+      position: absolute;
+      top: 0;
+      width: 10rem;
+      height: 100%;
+      content: "";
+      z-index: 1;
+  }
+
+  /* .marquee:before {
+      left: 0;
+      background: linear-gradient(to right, #111 0%, transparent 100%);
+  }
+
+  .marquee:after {
+      right: 0;
+      background: linear-gradient(to left, #111 0%, transparent 100%);
+  } */
+
+  .marquee-content {
+      list-style: none;
+      height: 100%;
+      display: flex;
+      animation: scrolling var(--marquee-animation-duration) linear infinite;
+      transition-delay: 2s, 4ms;
+  }
+
+  /* .marquee-content:hover {
+animation-play-state: paused;
+} */
+  @keyframes scrolling {
+      0% {
+          transform: translateX(0);
+      }
+
+      100% {
+          transform: translateX(calc(-1 * var(--marquee-element-width) * var(--marquee-elements)));
+      }
+  }
+
+  .carousel-control-prev, .carousel-control-next {
+    opacity: 1;
+}
+
+  .btn_pre,
+  .btn_next {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #0A5E66;
+    position: absolute;
+    /* top: 30%; */
+}
+
+.btn_pre:hover,
+.btn_next:hover {
+  background: #000;
+}
+
+#carouselExample1 .btn_pre,
+#carouselExample1 .btn_next{
+  top: 33%;
+}
+
+#carouselExample2 .btn_pre,
+#carouselExample2 .btn_next{
+  top: 62%;
+}
+
+
+#carouselExample5 .btn_pre,
+#carouselExample5 .btn_next{
+  top: 33%;
+}
+
+#carouselExample6 .btn_pre,
+#carouselExample6 .btn_next{
+  top: 62%;
+}
+
+
+
+@media (max-width: 960px) {
+  #carouselExample1 .btn_pre,
+  #carouselExample1 .btn_next{
+    top: 25%;
+  }
+  
+  #carouselExample2 .btn_pre,
+  #carouselExample2 .btn_next{
+    top: 68%;
+  }
+  #carouselExample4 .btn_pre,
+  #carouselExample4 .btn_next{
+    top: 62%;
+  }
+  
+  #carouselExample5 .btn_pre,
+  #carouselExample5 .btn_next{
+    top: 25%;
+  }
+  
+  #carouselExample6 .btn_pre,
+  #carouselExample6 .btn_next{
+    top: 68%;
+  }
+}
+
+
+@media (max-width: 767.98px) {
+  #carouselExample2,
+  #carouselExample6 {
+    margin-top: 1.5rem!important;
+  }
+
+  .btn_pre,
+  .btn_next {
+    top: 30%;
+  }
+
+  #carouselExample1 .btn_pre,
+#carouselExample1 .btn_next{
+  top: 30%;
+}
+
+#carouselExample2 .btn_pre,
+#carouselExample2 .btn_next{
+  top: 30%;
+}
+
+#carouselExample4 .btn_pre,
+#carouselExample4 .btn_next{
+  top: 30%;
+}
+
+#carouselExample5 .btn_pre,
+#carouselExample5 .btn_next{
+  top: 30%;
+}
+
+#carouselExample6 .btn_pre,
+#carouselExample6 .btn_next{
+  top: 30%;
+}
+}
+
+
+
+
+
+.btn_pre{
+  left: 20px;
+}
+
+.btn_next {
+  right: 20px;
+}
+
+.btn_pre img, .btn_next img {
+  width: 20px;
+  height: 9px;
+}
+
+
+
+
+.carousel2-item-bg {
+  background: url(../img/img_knot.svg) no-repeat;
+  background-position: 55% 111%;
+}
+
+
+.carousel3-item-bg {
+  background: url(../img/img_knot.svg) no-repeat;
+  background-position: 125% 30%;
+}
+
+.carousel1-item-bg,
+.carousel4-item-bg,
+.carousel5-item-bg {
+  background: url(../img/img_knot.svg) no-repeat;
+  background-position: -9% 37%;
+}
+
+
+
+.carousel6-item-bg {
+  background: url(../img/img_knot.svg) no-repeat;
+  background-position: 55% 111%;
+}
+
+
+.carousel7-item-bg {
+  background: url(../img/img_knot.svg) no-repeat;
+  background-position: 125% 30%;
+}
+
+.carousel .p-article__text {
+  box-sizing: border-box;
+  margin: 2rem 0;
+}
+
+.desktop_carousel_article{
+  display: block!important;
+  }
+
+.mobile_carousel_article{
+  display: none!important;
+  }
+
+@media (max-width: 767.98px) {
+
+.carousel2-item-bg {
+  background: url(../img/img_knot.svg) no-repeat;
+  background-position: -12% 104%;
+}
+
+
+.carousel3-item-bg {
+  background: url(../img/img_knot.svg) no-repeat;
+  background-position: 50% 20%;
+}
+
+.carousel1-item-bg,
+.carousel5-item-bg {
+  background: url(../img/img_knot.svg) no-repeat;
+  background-position: 44% -16%;
+}
+
+
+.carousel4-item-bg,
+.carousel6-item-bg {
+  background: url(../img/img_knot.svg) no-repeat;
+  background-position: 17% 111%;
+}
+
+
+.carousel7-item-bg {
+  background: url(../img/img_knot.svg) no-repeat;
+  background-position: 50% 20%;
+}
+
+  .desktop_carousel_article{
+  display: none!important;
+  }
+  .mobile_carousel_article{
+    display: block!important;
+  }
+}
+
+
+
+
+
