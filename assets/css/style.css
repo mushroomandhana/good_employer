@@ -1559,16 +1559,17 @@ section#good_employers {
     -webkit-animation: zoomin 10s ease-in infinite;
     animation: zoomin 10s ease-in infinite;
     }
+
 /* Zoom in Keyframes */
 @-webkit-keyframes zoomin {
-  0% {transform: scale(1);background-position: 75% 50%;}
-  50% {transform: scale(1.05);background-position: 75% 50%;} /* 輕微放大 */
-  100% {transform: scale(1);background-position: 75% 50%;}
-  }
-  @keyframes zoomin {
-  0% {transform: scale(1);background-position: 75% 50%;}
-  50% {transform: scale(1.05);background-position: 75% 50%;} /* 輕微放大 */
-  100% {transform: scale(1);background-position: 75% 50%;}
+    0% {transform: scale(1);background-position: 75% 50%;}
+    50% {transform: scale(1.05);background-position: 75% 50%;} /* 輕微放大 */
+    100% {transform: scale(1);background-position: 75% 50%;}
+    }
+    @keyframes zoomin {
+    0% {transform: scale(1);background-position: 75% 50%;}
+    50% {transform: scale(1.05);background-position: 75% 50%;} /* 輕微放大 */
+    100% {transform: scale(1);background-position: 75% 50%;}
   }
   
   
@@ -1693,15 +1694,48 @@ section#good_employers {
 .p-hero {
   padding: 0;
   position: relative;
-  background-color: #CFF4FC;
+  /* background-color: #CFF4FC; */
   height: auto;
   height: 100vh;
   overflow: hidden;
-  background-image: url(../img/bg_kv.png);
+  /* background-image: url(../img/bg_kv.png);
   background-repeat: no-repeat;
   background-position: bottom;
-  background-size: 100%;
+  background-size: 100%; */
 }
+
+.p-hero::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/bg_kv.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  z-index: -1;
+  
+  /* 應用動畫 */
+  -webkit-animation: kvzoomin 10s ease-in infinite;
+  animation: kvzoomin 10s ease-in infinite;
+  }
+  
+/* Zoom in Keyframes */
+@-webkit-keyframes kvzoomin {
+  0% {transform: scale(1);background-position: 75% 50%;}
+  50% {transform: scale(1.05);background-position: 75% 50%;} /* 輕微放大 */
+  100% {transform: scale(1);background-position: 75% 50%;}
+  }
+  @keyframes kvzoomin {
+  0% {transform: scale(1);background-position: 75% 50%;}
+  50% {transform: scale(1.05);background-position: 75% 50%;} /* 輕微放大 */
+  100% {transform: scale(1);background-position: 75% 50%;}
+}
+
 .p-hero .container {
   height: 100%;
 }
