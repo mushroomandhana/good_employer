@@ -2006,10 +2006,10 @@ section#good_employers {
 }
 
 .kv_title {
-  width: 1920px;
-  height: auto;
-  max-width: 1920px;
-  min-width: 1366px;
+  width: auto;
+  height: 25vh;
+  /* max-width: 1920px; */
+  /* min-width: 1366px; */
   position: absolute;
   z-index: 0;
 }
@@ -2025,41 +2025,43 @@ section#good_employers {
 }
 
 @media (max-width: 1366px) {
-
   .kv_title_bg {
     height: 111vh;
-    width: auto;
-    position: absolute;
     top: -20%;
     left: -24%;
-    margin: 0 auto;
-    z-index: -1;
   }
 }
 
 
 @media (max-width: 1280px) {
-
   .kv_title_bg {
     height: 110vh;
     top: -20%;
     left: -25%;
   }
+}
 
+@media (max-width: 1919px) {
+  .kv_title_bg {
+    height: 120vh;
+    top: -20%;
+    left: -4%;
+  }
 }
 
 @media (max-width: 1024px) {
-
   .kv_title_bg {
     height: 110vh;
-    top: 24%;
-    left: -24%;
+    top: -20%;
+    left: -12%;
   }
 }
 
 @media (max-width: 960px) {
-  .kv_title {
-    top: 25vh;
+  .kv_title_bg {
+    height: 111vh;
+    top: -20%;
+    left: -11%;
   }
 }
 
@@ -2077,10 +2079,10 @@ section#good_employers {
   }
 
   .kv_title_bg {
-    height: 100vh;
-    top: 32%;
-    left: -9%;
-    transform: rotate(-9deg);
+    height: 110vh;
+    top: -4%;
+    left: 6%;
+    transform: rotate(-7deg);
   }
 }
 
@@ -2091,6 +2093,11 @@ section#good_employers {
     top: -10%;
     left: -10%;
   }
+
+  .kv_title {
+    width: 1024px;
+  }
+
 }
 
 
@@ -2098,18 +2105,22 @@ section#good_employers {
 @media (max-width: 576px) {
   .kv_title_bg {
     height: 90vh;
-    top: 24%;
-    left: -12%;
-    transform: rotate(-18deg);
+    top: 16%;
+    left: -6%;
+    transform: rotate(-8deg);
   }
 
+  /* .kv_title {
+    width: 1024px;
+  } */
+}
+
+@media (max-width: 414px) {
   .kv_title {
     width: 960px;
-    height: auto;
-    min-width: 300px;
-    position: absolute;
   }
 }
+
 
 .p-hero .row.g-0 {
   display: flex;
@@ -2118,9 +2129,16 @@ section#good_employers {
 
 
 img.role_all {
-  width: 100%;
+  /* width: 100%;
   height: auto;
-  max-width: 1853px;
+  min-width: 64vh;
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+  display: inline-block; */
+  width: auto;
+  height: 100%;
+  max-height: 62vh;
   position: absolute;
   bottom: 0;
   z-index: 2;
@@ -2129,12 +2147,34 @@ img.role_all {
 
 
 img.role_all_mobile {
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 100%;
+  max-height: 60vh;
   position: absolute;
   bottom: 0;
   z-index: 2;
   display: none;
+}
+
+@media (max-width: 1640px) {
+
+  img.role_all {
+    width: auto;
+    height: 100%;
+    max-height: 60vh;
+  }
+
+}
+
+
+@media (max-width: 1366px) {
+
+  img.role_all {
+    height: auto;
+    max-height: 55vh;
+    max-width: 100%;
+  }
+
 }
 
 .p-hero .swiper {
@@ -2220,15 +2260,15 @@ img.role_all_mobile {
   min-height: 44px;
 }
 
-@media (max-width: 767px) {
-
+@media (max-width: 960px) {
   img.role_all {
-    display: none;
+    height: auto;
+    max-height: 50vh;
+    max-width: 100%;
   }
+}
 
-  img.role_all_mobile {
-    display: inline-block;
-  }
+@media (max-width: 767px) {
 
   .p-sponsor__item {
     flex-wrap: nowrap;
@@ -2239,7 +2279,28 @@ img.role_all_mobile {
     /* 這會讓每個a元素保持原本的大小，不會伸縮 */
   }
 
+  img.role_all {
+    max-height: 45vh;
+  }
 }
+
+@media (max-width: 667px) {
+  img.role_all {
+    max-height: 40vh;
+  }
+}
+
+@media (max-width: 576px) {
+  img.role_all {
+    display: none;
+  }
+
+  img.role_all_mobile {
+    display: inline-block;
+    max-height: 30vh;
+  }
+}
+
 
 
 .p-benefits__wrapper {
