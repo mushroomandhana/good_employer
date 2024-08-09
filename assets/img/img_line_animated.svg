@@ -1,10 +1,10 @@
-<svg width="936" height="1465" viewBox="0 0 936 1465" fill="none" xmlns="http://www.w3.org/2000/svg" style="">
-<path d="M25.0488 24.8086C17.6869 525.717 320.811 693.856 395.109 718.147C429.608 729.426 465.401 744.333 501.612 747.961C556.09 753.419 667.991 771.086 751.918 738.149C806.162 716.861 855.501 691.249 885.905 639.047C895.97 621.766 911.917 592.07 911.917 539.944C911.917 474.924 860.874 426.324 797.726 418.652C734.577 410.98 664.424 417.671 597.676 458.504C555.841 484.096 502.461 536.353 470.069 576.249C413.137 674.37 394.666 690.101 422.668 902.01C450.67 1113.92 622.347 1370.05 852.531 1434.81" stroke="url(#paint0_linear_468_164)" stroke-width="48" stroke-linecap="square" class="HtCzEafz_0"></path>
+<svg width="1334" height="1336" viewBox="0 0 1334 1336" fill="none" xmlns="http://www.w3.org/2000/svg" style="">
+<path d="M1323.93 90.1978C1159.43 15.1979 880.939 -13.8025 670.439 99.1978C480 201.429 412.822 320.198 395.439 384.698C376.439 455.198 383.439 508.198 435.939 546.698C470.86 572.306 543.169 565.077 568.439 529.698C588.439 501.698 601.439 439.698 539.929 406.698C497.696 384.04 387.031 399.678 309.439 450.198C203 519.5 67.475 681.992 36.9374 1017.2C16.4396 1242.2 26.4383 1332.7 26.4383 1332.7" stroke="url(#paint0_linear_809_336742)" stroke-width="48" class="OAELUZAM_0"></path>
 <defs>
-<linearGradient id="paint0_linear_468_164" x1="-3.90816" y1="1412.73" x2="544.311" y2="1412.73" gradientUnits="userSpaceOnUse">
-<stop stop-color="#7CF681" stop-opacity="0.34"></stop>
-<stop offset="0.574223" stop-color="#7CF681"></stop>
-<stop offset="1" stop-color="#7CF681"></stop>
+<linearGradient id="paint0_linear_809_336742" x1="129" y1="952" x2="436.284" y2="-115.791" gradientUnits="userSpaceOnUse">
+<stop stop-color="#7CF681"></stop>
+<stop offset="0.551579" stop-color="#7CF681"></stop>
+<stop offset="1" stop-color="#7CF681" stop-opacity="0.75"></stop>
 </linearGradient>
 </defs>
-<style data-made-with="vivus-instant">.HtCzEafz_0{stroke-dasharray:3097 3099;stroke-dashoffset:3098;animation:HtCzEafz_draw_0 7200ms linear 0ms infinite,HtCzEafz_fade 7200ms linear 0ms infinite;}@keyframes HtCzEafz_draw{100%{stroke-dashoffset:0;}}@keyframes HtCzEafz_fade{0%{stroke-opacity:1;}94.44444444444444%{stroke-opacity:1;}100%{stroke-opacity:0;}}@keyframes HtCzEafz_draw_0{11.11111111111111%{stroke-dashoffset: 3098}38.88888888888889%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}</style></svg>
+<style data-made-with="vivus-instant">.OAELUZAM_0{stroke-dasharray:2758 2760;stroke-dashoffset:2759;animation:OAELUZAM_draw_0 4100ms linear 0ms infinite,OAELUZAM_fade 4100ms linear 0ms infinite;}@keyframes OAELUZAM_draw{100%{stroke-dashoffset:0;}}@keyframes OAELUZAM_fade{0%{stroke-opacity:1;}95.1219512195122%{stroke-opacity:1;}100%{stroke-opacity:0;}}@keyframes OAELUZAM_draw_0{9.75609756097561%{stroke-dashoffset: 2759}42.27642276422765%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}</style></svg>
