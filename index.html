@@ -45,25 +45,20 @@
         })(window, document, 'script', 'dataLayer', 'GTM-MRTNL7');</script>
     <!-- End Google Tag Manager -->
 
-    <!-- Start GA-->
-    <!-- End GA -->
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <!-- Global site tag end -->
-
     <!-- Meta Pixel Code -->
     <script>
-        !function(){
-            var d=function d(a) {
-              for(var e=arguments.length,n=new Array(e>1?e-1:0),i=1;i<e;i++)
-              n[i-1]=arguments[i];
-              d.queue.push([a].concat(n))
+        !function () {
+            var d = function d(a) {
+                for (var e = arguments.length, n = new Array(e > 1 ? e - 1 : 0), i = 1; i < e; i++)
+                    n[i - 1] = arguments[i];
+                d.queue.push([a].concat(n))
             };
-            d.queue=[],window.dadk=window.dadk||d;
-            var a=document.createElement("script");
-            a.src="undefined"!=typeof URLSearchParams?"https://unpkg.com/@dcard/web-ad-tracking-sdk/build/dadk.iife.js":"https://unpkg.com/@dcard/web-ad-tracking-sdk/build/outdated-dadk.iife.js",
-            document.head.appendChild(a),
-            window.dadk("init", "P3stg8JA-5K7GUQ4MPr4S"), window.dadk("track", "PageView")}();
+            d.queue = [], window.dadk = window.dadk || d;
+            var a = document.createElement("script");
+            a.src = "undefined" != typeof URLSearchParams ? "https://unpkg.com/@dcard/web-ad-tracking-sdk/build/dadk.iife.js" : "https://unpkg.com/@dcard/web-ad-tracking-sdk/build/outdated-dadk.iife.js",
+                document.head.appendChild(a),
+                window.dadk("init", "P3stg8JA-5K7GUQ4MPr4S"), window.dadk("track", "PageView")
+        }();
     </script>
     <script>window.dadk('track', 'ViewContent')</script>
     <!-- End Meta Pixel Code -->
@@ -140,7 +135,7 @@
                 <div
                     class="kv_title_area col-xl-12 col-lg-12 col-md-12 col-sm-12 d-flex justify-content-center align-items-center animate__animated animate__fadeInRight">
 
-                    <img class="kv_title_bg" src="assets/img/img_line_animated.svg" alt="">
+                    <img class="kv_title_bg" src="assets/img/img_line_animated.svg" alt="動態線條">
                     <img class="kv_title" src="assets/img/img_text_kv.svg" alt="TALENT, in Taiwan人才永續行動｜台灣好雇主">
                 </div>
                 <div class="p__role col-xl-12 col-lg-12 col-md-12 col-sm-12 d-flex justify-content-center">
@@ -150,7 +145,7 @@
                         src="./assets/img/img_management_all_mobile.png" alt="TALENT, in Taiwan人才永續行動｜台灣好雇主">
                 </div>
             </div>
-            
+
         </div>
 
     </section>
@@ -853,29 +848,27 @@
             document.documentElement.scrollTop = 0;
         }
     </script>
+    <script>
+        $(document).ready(function () {
+            // When an element with an anchor link is clicked
+            $('a[href^="#"]').click(function (e) {
+                // Prevent the default anchor click behavior
+                e.preventDefault();
+
+                // Get the href attribute value of the anchor, which is the target ID
+                var targetId = $(this).attr('href');
+
+                // If the target ID exists on the page
+                if ($(targetId).length) {
+                    // Smoothly scroll to the position of the anchor
+                    $('html, body').animate({
+                        scrollTop: $(targetId).offset().top
+                    }, 100); // Complete the scroll within 100 milliseconds
+                }
+            });
+        });
+    </script>
 
 </body>
-<script>
-    $(document).ready(function () {
-        // When an element with an anchor link is clicked
-        $('a[href^="#"]').click(function (e) {
-            // Prevent the default anchor click behavior
-            e.preventDefault();
-
-            // Get the href attribute value of the anchor, which is the target ID
-            var targetId = $(this).attr('href');
-
-            // If the target ID exists on the page
-            if ($(targetId).length) {
-                // Smoothly scroll to the position of the anchor
-                $('html, body').animate({
-                    scrollTop: $(targetId).offset().top
-                }, 100); // Complete the scroll within 100 milliseconds
-            }
-        });
-    });
-</script>
-
-
 
 </html>
